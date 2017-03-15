@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TopKnot</string>
+    <string name="title_activity_knot_item">knot_item</string>
+</resources>
