@@ -14,8 +14,16 @@ public class InfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-    }
 
-    Intent intent = getIntent();
-    Bundle extras = intent.getExtras();
+
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+
+        knotText = (TextView)findViewById(R.id.info_text);
+
+        String knotInfo = extras.getString("knot_selected");
+        knotText.setText(knotInfo);
+
+
+    }
 }

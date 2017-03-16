@@ -1,5 +1,6 @@
 package com.codeclan.topknot;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,9 +28,12 @@ public class TopKnotActivity extends AppCompatActivity {
     }
 
     public void titleClicked(View textView){
-        TextView title = (TextView) textView;
-        Log.d("Title clicked", title.getText().toString());
 
+        TextView title = (TextView) textView;
+
+        Intent intent = new Intent(this, InfoActivity.class);
+        intent.putExtra("knot_selected", title.getText().toString());
+        startActivity(intent);
     }
 
 
