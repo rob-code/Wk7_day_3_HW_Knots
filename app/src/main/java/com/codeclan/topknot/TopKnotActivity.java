@@ -29,6 +29,11 @@ public class TopKnotActivity extends AppCompatActivity {
 
     public void titleClicked(View textView){
 
+
+        //I got lucky with the name of the knot!
+        //Android grabs the string from that instance!
+        //Had I clicked from the description I would have got that too,
+        //which is what happens!
         TextView title = (TextView) textView;
 
         Intent intent = new Intent(this, InfoActivity.class);
